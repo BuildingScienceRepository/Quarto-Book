@@ -1,0 +1,13 @@
+# Simulation Workflows {#sec-simulation}
+
+If simulation is the goal, what are the different levels of complexity? We explore workflows for setting up and running building energy and urban simulations.
+
+## Tools and Platforms
+
+We rely on several open-source and widely-used tools in our field, such as:
+
+- Eddy3D
+- Urbano
+- EnergyPlus
+
+Each topic in this section will go from the most simple to the most complex analysis, describing what is involved to set it up.

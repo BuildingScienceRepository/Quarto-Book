@@ -1,0 +1,5 @@
+# Summary {#sec-summary}
+
+In conclusion, this repository represents an ongoing effort by students and researchers to document building science workflows.
+
+By looking at particular questions from a systems and complexity perspective, we hope to provide a structured, curated guide for our field [@knuth84].

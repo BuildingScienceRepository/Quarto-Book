@@ -1,0 +1,11 @@
+# Neural Nets in Building Science {#sec-neural-nets}
+
+When classical simulation models reach their computational limits—such as in complex urban microclimates or real-time control applications—machine learning approaches offer a powerful alternative.
+
+This chapter covers the application of Artificial Neural Networks (ANNs) in building science.
+
+## Physics-Informed Neural Networks
+
+How can we embed the laws of thermodynamics into a neural network to predict energy consumption or indoor temperatures faster than an EnergyPlus run?
+
+We will explore state-of-the-art physics-based deep learning approaches to these problems.

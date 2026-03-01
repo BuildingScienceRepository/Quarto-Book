@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Building Science Atlas"
+  author: "Patrick and Team"
+  date: "today"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - energy_demand.qmd
+    - simulation.qmd
+    - neural_nets.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
