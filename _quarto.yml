@@ -19,5 +19,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+  epub:
+    cover-image: cover.png
   pdf:
     documentclass: scrreprt
