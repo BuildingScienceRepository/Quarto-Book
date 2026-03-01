@@ -1,0 +1,92 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Building Science Atlas",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Welcome to the Building Science Atlas.\nThis collaborative repository compiles the current state of sustainability analysis for building science and urban analysis. We explore key questions from a systems and complexity perspective.\nOur goal is to cover workflows, code, and theory—from the simplest ballpark estimates to complex simulation models.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "energy_demand.html",
+    "href": "energy_demand.html",
+    "title": "2  Energy Demand",
+    "section": "",
+    "text": "2.1 Simple Ballpark Estimates\nWhat is the energy demand of a building? This is one of the most common questions in building science.\nTo start, we look at the simplest way to get a ballpark number. This might involve looking at historical energy use intensity (EUI) for similar buildings in the same climate zone.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Energy Demand</span>"
+    ]
+  },
+  {
+    "objectID": "energy_demand.html#when-to-attempt-a-simulation",
+    "href": "energy_demand.html#when-to-attempt-a-simulation",
+    "title": "2  Energy Demand",
+    "section": "2.2 When to Attempt a Simulation",
+    "text": "2.2 When to Attempt a Simulation\nIf a simple estimate is insufficient, a simulation may be necessary. We detail the different levels of complexity involved in simulating energy demand, starting from basic RC models.\n\n2.2.1 RC Models (e.g., R51C)\nRC (Resistance-Capacitance) models provide a simplified dynamic representation of a building’s thermal behavior.\n\n\n2.2.2 Full Energy Balance\nA full energy balance model considers all heat flows, internal loads, and HVAC system interactions.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Energy Demand</span>"
+    ]
+  },
+  {
+    "objectID": "simulation.html",
+    "href": "simulation.html",
+    "title": "3  Simulation Workflows",
+    "section": "",
+    "text": "3.1 Tools and Platforms\nIf simulation is the goal, what are the different levels of complexity? We explore workflows for setting up and running building energy and urban simulations.\nWe rely on several open-source and widely-used tools in our field, such as:\nEach topic in this section will go from the most simple to the most complex analysis, describing what is involved to set it up.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simulation Workflows</span>"
+    ]
+  },
+  {
+    "objectID": "simulation.html#tools-and-platforms",
+    "href": "simulation.html#tools-and-platforms",
+    "title": "3  Simulation Workflows",
+    "section": "",
+    "text": "Eddy3D\nUrbano\nEnergyPlus",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simulation Workflows</span>"
+    ]
+  },
+  {
+    "objectID": "neural_nets.html",
+    "href": "neural_nets.html",
+    "title": "4  Neural Nets in Building Science",
+    "section": "",
+    "text": "4.1 Physics-Informed Neural Networks\nWhen classical simulation models reach their computational limits—such as in complex urban microclimates or real-time control applications—machine learning approaches offer a powerful alternative.\nThis chapter covers the application of Artificial Neural Networks (ANNs) in building science.\nHow can we embed the laws of thermodynamics into a neural network to predict energy consumption or indoor temperatures faster than an EnergyPlus run?\nWe will explore state-of-the-art physics-based deep learning approaches to these problems.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Neural Nets in Building Science</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "5  Summary",
+    "section": "",
+    "text": "In conclusion, this repository represents an ongoing effort by students and researchers to document building science workflows.\nBy looking at particular questions from a systems and complexity perspective, we hope to provide a structured, curated guide for our field (Knuth 1984).\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

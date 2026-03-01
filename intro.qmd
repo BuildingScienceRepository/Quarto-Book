@@ -1,7 +1,0 @@
-# Introduction {#sec-intro}
-
-Welcome to the **Building Science Atlas**.
-
-This collaborative repository compiles the current state of sustainability analysis for building science and urban analysis. We explore key questions from a systems and complexity perspective.
-
-Our goal is to cover workflows, code, and theory—from the simplest ballpark estimates to complex simulation models.
