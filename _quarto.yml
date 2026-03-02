@@ -5,6 +5,7 @@ book:
   title: "Building Science Atlas"
   author: "Patrick and Team"
   date: "today"
+  downloads: [pdf]
   chapters:
     - index.qmd
     - intro.qmd
