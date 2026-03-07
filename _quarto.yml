@@ -5,6 +5,8 @@ book:
   title: "Building Science Atlas"
   author: "Patrick and Team"
   date: "today"
+  repo-url: https://github.com/BuildingScienceRepository/Quarto-Book
+  repo-actions: [edit, issue]
   downloads: [pdf]
   chapters:
     - index.qmd
