@@ -8,6 +8,8 @@ book:
   repo-url: https://github.com/BuildingScienceRepository/Quarto-Book
   repo-actions: [edit, issue]
   downloads: [pdf]
+  reader-mode: true
+  back-to-top-navigation: true
   chapters:
     - index.qmd
     - intro.qmd
