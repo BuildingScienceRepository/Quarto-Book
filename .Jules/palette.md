@@ -5,3 +5,7 @@
 ## 2026-03-08 - Quarto Reader Mode and Back-to-Top Navigation
 **Learning:** Quarto offers native reader-mode and back-to-top-navigation features. Enabling `reader-mode: true` and `back-to-top-navigation: true` in `_quarto.yml` significantly improves reading experience and accessibility without needing any custom code or new dependencies.
 **Action:** Enable these properties in Quarto projects to provide an accessible, low-cognitive-load reading interface.
+
+## 2026-03-09 - Exposing Quarto Formats for Accessibility
+**Learning:** Quarto books may configure alternative accessible formats (like `epub`) without exposing them to users in the UI by default. EPubs offer superior accessibility for screen readers and customized reading experiences compared to PDFs or standard web pages.
+**Action:** When a Quarto project has alternative formats like `epub` configured under `format:`, explicitly add them to the `downloads` array under the `book:` section in `_quarto.yml` (e.g., `downloads: [pdf, epub]`) so users can easily access and download these formats directly from the sidebar.
