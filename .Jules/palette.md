@@ -9,3 +9,7 @@
 ## 2026-03-09 - Exposing Quarto Formats for Accessibility
 **Learning:** Quarto books may configure alternative accessible formats (like `epub`) without exposing them to users in the UI by default. EPubs offer superior accessibility for screen readers and customized reading experiences compared to PDFs or standard web pages.
 **Action:** When a Quarto project has alternative formats like `epub` configured under `format:`, explicitly add them to the `downloads` array under the `book:` section in `_quarto.yml` (e.g., `downloads: [pdf, epub]`) so users can easily access and download these formats directly from the sidebar.
+
+## 2026-03-10 - Explicit Document Language
+**Learning:** Quarto builds default to omitting an explicit language definition if `lang` is not specified at the top level of `_quarto.yml`. This causes the generated `<html>` tags to lack a proper `lang` attribute, creating a WCAG accessibility issue for screen reader pronunciation mapping.
+**Action:** Always verify `lang: <language-code>` is present in the root level of `_quarto.yml` files for improved screen reader support.
