@@ -2,12 +2,26 @@
 
 If simulation is the goal, what are the different levels of complexity? We explore workflows for setting up and running building energy and urban simulations.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+![Simulation Workflow Overview](cover.png){#fig-simulation-workflow}
+
 ## Tools and Platforms
 
 We rely on several open-source and widely-used tools in our field, such as:
 
-- Eddy3D
-- Urbano
-- EnergyPlus
+- [Eddy3D](https://www.eddy3d.com/)
+- [Urbano](https://urbano.io/)
+- [EnergyPlus](https://energyplus.net/)
 
 Each topic in this section will go from the most simple to the most complex analysis, describing what is involved to set it up.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+
+The calculation of mean radiant temperature ($T_{mrt}$) is crucial in many of these tools:
+
+$$
+T_{mrt} = \left[ \sum_{i=1}^n F_{p-i} T_i^4 \right]^{1/4}
+$$ {#eq-mrt}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
