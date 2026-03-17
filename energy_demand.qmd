@@ -2,9 +2,22 @@
 
 What is the energy demand of a building? This is one of the most common questions in building science.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 ## Simple Ballpark Estimates
 
 To start, we look at the simplest way to get a ballpark number. This might involve looking at historical energy use intensity (EUI) for similar buildings in the same climate zone.
+
+> "A good estimate is better than a precise error." - Anonymous Building Scientist
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
+
+| Building Type | Typical EUI (kWh/m2/yr) | Peak Load (W/m2) |
+|---------------|-------------------------|------------------|
+| Residential   | 100 - 150               | 40 - 60          |
+| Office        | 150 - 250               | 60 - 100         |
+| Retail        | 200 - 300               | 80 - 120         |
+: Typical Building Metrics {#tbl-metrics}
 
 ## When to Attempt a Simulation
 
@@ -14,6 +27,16 @@ If a simple estimate is insufficient, a simulation may be necessary. We detail t
 
 RC (Resistance-Capacitance) models provide a simplified dynamic representation of a building's thermal behavior.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 ### Full Energy Balance
 
 A full energy balance model considers all heat flows, internal loads, and HVAC system interactions.
+
+The general heat balance equation can be expressed as:
+
+$$
+Q_{load} = Q_{solar} + Q_{internal} + Q_{conduction} + Q_{ventilation} \pm Q_{storage}
+$$ {#eq-heat-balance}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum, eros et rutrum imperdiet, velit erat aliquet ipsum, eu pharetra erat enim vel nisi.

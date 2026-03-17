@@ -2,10 +2,36 @@
 
 When classical simulation models reach their computational limits—such as in complex urban microclimates or real-time control applications—machine learning approaches offer a powerful alternative.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque, est sed interdum accumsan, lacus eros accumsan nunc, eu malesuada erat mi vitae urna. Nunc pellentesque, libero sit amet egestas viverra, orci velit viverra libero, id venenatis est orci scelerisque nisi.
+
 This chapter covers the application of Artificial Neural Networks (ANNs) in building science.
+
+> "AI is the new electricity, and data is the new oil." - Common ML Proverb
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis a pede tempor malesuada. Vivamus quis mi. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.
+
+A standard feedforward neural network layer can be expressed mathematically as:
+
+$$
+h_{l+1} = \sigma ( W_l \cdot h_l + b_l )
+$$ {#eq-nn-layer}
+
+where $h_{l+1}$ is the output, $\sigma$ is the activation function, $W_l$ are the weights, and $b_l$ is the bias.
 
 ## Physics-Informed Neural Networks
 
 How can we embed the laws of thermodynamics into a neural network to predict energy consumption or indoor temperatures faster than an EnergyPlus run?
 
 We will explore state-of-the-art physics-based deep learning approaches to these problems.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus augue non sapien. Aliquam ante. Suspendisse dictum porta lectus.
+
+| Hyperparameter | Typical Range | Description |
+|----------------|---------------|-------------|
+| Learning Rate  | $10^{-4} - 10^{-2}$ | Step size for gradient descent |
+| Batch Size     | 32 - 256 | Number of samples per update |
+| Hidden Layers  | 2 - 5 | Depth of the neural network |
+| Units/Layer    | 64 - 512 | Width of each hidden layer |
+: Common Hyperparameters for Building Energy Prediction {#tbl-hyperparameters}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum elementum velit. Fusce egestas elit eget lorem. Phasellus blandit leo ut odio.
