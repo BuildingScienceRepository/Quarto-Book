@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -380,11 +409,68 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>When classical simulation models reach their computational limits—such as in complex urban microclimates or real-time control applications—machine learning approaches offer a powerful alternative.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque, est sed interdum accumsan, lacus eros accumsan nunc, eu malesuada erat mi vitae urna. Nunc pellentesque, libero sit amet egestas viverra, orci velit viverra libero, id venenatis est orci scelerisque nisi.</p>
 <p>This chapter covers the application of Artificial Neural Networks (ANNs) in building science.</p>
+<blockquote class="blockquote">
+<p>“AI is the new electricity, and data is the new oil.” - Common ML Proverb</p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis a pede tempor malesuada. Vivamus quis mi. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede.</p>
+<p>A standard feedforward neural network layer can be expressed mathematically as:</p>
+<p><span id="eq-nn-layer"><span class="math display">\[
+h_{l+1} = \sigma ( W_l \cdot h_l + b_l )
+\tag{4.1}\]</span></span></p>
+<p>where <span class="math inline">\(h_{l+1}\)</span> is the output, <span class="math inline">\(\sigma\)</span> is the activation function, <span class="math inline">\(W_l\)</span> are the weights, and <span class="math inline">\(b_l\)</span> is the bias.</p>
 <section id="physics-informed-neural-networks" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="physics-informed-neural-networks"><span class="header-section-number">4.1</span> Physics-Informed Neural Networks</h2>
 <p>How can we embed the laws of thermodynamics into a neural network to predict energy consumption or indoor temperatures faster than an EnergyPlus run?</p>
 <p>We will explore state-of-the-art physics-based deep learning approaches to these problems.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus augue non sapien. Aliquam ante. Suspendisse dictum porta lectus.</p>
+<div id="tbl-hyperparameters" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hyperparameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1: Common Hyperparameters for Building Energy Prediction
+</figcaption>
+<div aria-describedby="tbl-hyperparameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 34%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hyperparameter</th>
+<th>Typical Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Learning Rate</td>
+<td><span class="math inline">\(10^{-4} - 10^{-2}\)</span></td>
+<td>Step size for gradient descent</td>
+</tr>
+<tr class="even">
+<td>Batch Size</td>
+<td>32 - 256</td>
+<td>Number of samples per update</td>
+</tr>
+<tr class="odd">
+<td>Hidden Layers</td>
+<td>2 - 5</td>
+<td>Depth of the neural network</td>
+</tr>
+<tr class="even">
+<td>Units/Layer</td>
+<td>64 - 512</td>
+<td>Width of each hidden layer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum elementum velit. Fusce egestas elit eget lorem. Phasellus blandit leo ut odio.</p>
 
 
 </section>

@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -380,15 +409,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>If simulation is the goal, what are the different levels of complexity? We explore workflows for setting up and running building energy and urban simulations.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<div id="fig-simulation-workflow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-simulation-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="cover.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-simulation-workflow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Simulation Workflow Overview
+</figcaption>
+</figure>
+</div>
 <section id="tools-and-platforms" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="tools-and-platforms"><span class="header-section-number">3.1</span> Tools and Platforms</h2>
 <p>We rely on several open-source and widely-used tools in our field, such as:</p>
 <ul>
-<li>Eddy3D</li>
-<li>Urbano</li>
-<li>EnergyPlus</li>
+<li><a href="https://www.eddy3d.com/">Eddy3D</a></li>
+<li><a href="https://urbano.io/">Urbano</a></li>
+<li><a href="https://energyplus.net/">EnergyPlus</a></li>
 </ul>
 <p>Each topic in this section will go from the most simple to the most complex analysis, describing what is involved to set it up.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+<p>The calculation of mean radiant temperature (<span class="math inline">\(T_{mrt}\)</span>) is crucial in many of these tools:</p>
+<p><span id="eq-mrt"><span class="math display">\[
+T_{mrt} = \left[ \sum_{i=1}^n F_{p-i} T_i^4 \right]^{1/4}
+\tag{3.1}\]</span></span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 
 
 </section>
