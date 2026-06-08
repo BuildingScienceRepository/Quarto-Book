@@ -94,7 +94,7 @@
     "href": "summary.html",
     "title": "5  Summary",
     "section": "",
-    "text": "In conclusion, this repository represents an ongoing effort by students and researchers to document building science workflows.\nBy looking at particular questions from a systems and complexity perspective, we hope to provide a structured, curated guide for our field (Knuth 1984).\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "In conclusion, this repository represents an ongoing effort by students and researchers to document building science workflows.\nBy looking at particular questions from a systems and complexity perspective, we hope to provide a structured, curated guide for our field (Knuth 1984).\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
     ]
@@ -104,7 +104,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. (USA) 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
     ]
